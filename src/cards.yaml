@@ -1,0 +1,13 @@
+---
+- name: Rusted Cannon
+  type: equipment
+  cost: 3
+  resource: 1
+  ability:
+    cannon: 2
+- name: Rusted Cannon
+  type: equipment
+  cost: 3
+  resource: 1
+  ability:
+    cannon: 2
