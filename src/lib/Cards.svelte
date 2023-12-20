@@ -4,7 +4,7 @@
 </script>
 
 <div class="cards">
-  {#each cards.slice(0, 7) as card}
+  {#each cards as card}
     <Card {card} />
   {/each}
 </div>

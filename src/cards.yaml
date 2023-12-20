@@ -1,13 +1,159 @@
 ---
 - name: Rusted Cannon
   type: equipment
-  cost: 3
+  cost: 0
   resource: 1
   ability:
-    cannon: 2
-- name: Rusted Cannon
+    cannon: 1
+- name: Cannon
   type: equipment
-  cost: 3
+  cost: 2
   resource: 1
   ability:
     cannon: 2
+- name: Buckshot
+  type: upgrade
+  cost: 1
+  resource: 1
+  ability:
+    cannon: 1
+- name: Charge!
+  type: event
+  cost: 1
+  resource: 1
+  ability:
+    swashbuckling: 1
+    perCrew: true
+- name: Samurai
+  type: crew
+  cost: 3
+  resource: 1
+  ability:
+    swashbuckling: 4
+- name: Cutthroat
+  type: crew
+  cost: 2
+  resource: 1
+  ability:
+    swashbuckling: 3
+- name: Cutthroat
+  type: crew
+  cost: 2
+  resource: 1
+  ability:
+    swashbuckling: 3
+- name: Stabby
+  type: crew
+  cost: 1
+  resource: 1
+  ability:
+    swashbuckling: 2
+- name: Knife tricks
+  type: event
+  cost: 1
+  resource: 1
+  ability:
+    swashbuckling: 2
+    carousing: 2
+- name: Pirate grenades
+  type: equipment
+  cost: 0
+  resource: 1
+  ability:
+    explosive: 1
+- name: Explosive barrels
+  type: equipment
+  cost: 2
+  resource: 1
+  ability:
+    explosive: 2
+- name: Fire in the hole!
+  type: event
+  cost: 1
+  resource: 1
+  ability:
+    explosive: 3
+- name: Blow the locks
+  type: event
+  cost: 0
+  resource: 1
+  ability:
+    explosive: 1
+    shiftiness: 1
+- name: Shore leave
+  type: event
+  cost: 2
+  resource: 2
+  ability:
+    carousing: 6
+- name: Shore leave
+  type: event
+  cost: 2
+  resource: 2
+  ability:
+    carousing: 6
+- name: Top shelf
+  type: event
+  cost: 1
+  resource: 1
+  ability:
+    carousing: 3
+- name: Top shelf
+  type: event
+  cost: 1
+  resource: 1
+  ability:
+    carousing: 3
+- name: Ace up your sleeve
+  type: event
+  cost: 0
+  resource: 1
+  ability:
+    carousing: 1
+    shiftiness: 1
+- name: Ninja training
+  type: training
+  cost: 0
+  resource: 1
+  ability:
+    shiftiness: 1
+- name: Ninja training
+  type: training
+  cost: 0
+  resource: 1
+  ability:
+    shiftiness: 1
+- name: Parley
+  type: event
+  cost: 1
+  resource: 1
+  ability:
+    shiftiness: 3
+- name: Lock picking
+  type: event
+  cost: 1
+  resource: 1
+  ability:
+    shiftiness: [1, 1]
+- name: Night assault
+  type: event
+  cost: 3
+  resource: 1
+  ability:
+    shiftiness: [2, 2]
+- name: Full Sails
+  type: equipment
+  cost: 2
+  resource: 3
+  dispose: true
+  ability:
+    move: 1
+    resource: 1
+- name: Treasure map
+  type: objective
+  cost: 2
+  resource: 1
+  dispose: true
+  ability:
+    custom: |
+      This is a private objective that requires 6 [carousing] + [shiftiness]. 5 points
