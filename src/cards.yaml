@@ -157,3 +157,33 @@
   ability:
     custom: |
       This is a private objective that requires 6 [carousing] + [shiftiness]. 5 points
+- name: Get to the Guns
+  type: event
+  cost: 1
+  resource: 1
+  ability:
+    cannon: 3
+- name: Harpoon Cannon
+  type: equipment
+  cost: 2
+  resource: 1
+  ability:
+    swashbuckling: 2
+- name: Blackest powder
+  type: upgrade
+  cost: 2
+  resource: 1
+  ability:
+    explosive: 1
+- name: Fireworks
+  type: equipment
+  cost: 2
+  resource: 1
+  ability:
+    carousing: 2
+- name: Ninja pirate
+  type: crew
+  cost: 3
+  resource: 1
+  ability:
+    shiftiness: 4

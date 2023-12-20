@@ -33,6 +33,7 @@
 <style>
   .container {
     position: relative;
+    box-sizing: border-box;
     width: 409px;
     height: 567px;
     font: 20px sans-serif;
@@ -46,7 +47,7 @@
 
   .ocean-footer {
     position: absolute;
-    width: 409px;
+    width: 389px;
     height: 200px;
     left: 0;
     bottom: 0;
@@ -60,7 +61,7 @@
     position: absolute;
     top: 40px;
     left: 0;
-    width: 409px;
+    width: 389px;
     height: 327px;
     background-image: url("../assets/pirate_ship.png");
     background-size: cover;

@@ -20,6 +20,7 @@
 
 <div class="container">
   {#if type === "crew"}<div class="modifier">1x</div>{/if}
+  {#if type === "upgrade"}<div class="modifier">+</div>{/if}
   {#if cannon}
     <Icon icon="cannon" number={cannon} />
   {/if}
@@ -50,6 +51,7 @@
   {#if custom}
     <div class="custom">{custom}</div>
   {/if}
+  {#if perCrew}<div class="modifier">x💃</div>{/if}
 </div>
 
 <style>
