@@ -150,13 +150,14 @@
     move: 1
     resource: 1
 - name: Treasure map
-  type: objective
+  type: privateObjective
   cost: 2
   resource: 1
   dispose: true
   ability:
     custom: |
-      This is a private objective that requires 6 [carousing] + [shiftiness]. 5 points
+      This is a private objective that requires 6 [carousing] + [swashbuckling]/[explosive]/[shiftiness].[br]
+      5 points
 - name: Get to the Guns
   type: event
   cost: 1
@@ -187,3 +188,36 @@
   resource: 1
   ability:
     shiftiness: 4
+- name: Pirate day
+  type: publicEvent
+  cost: 0
+  resource: 1
+  ability:
+    custom: |
+      Draw a card to replace this.[br]
+      [announcement]: At the end of the turn, all Pirate Captains refresh.
+- name: Strong winds
+  type: publicEvent
+  cost: 0
+  resource: 1
+  ability:
+    custom: |
+      Draw a card to replace this.[br]
+      [announcement]: All players get 2[move].
+- name: Solar eclipse
+  type: publicEvent
+  cost: 0
+  resource: 1
+  ability:
+    custom: |
+      Draw a card to replace this.[br]
+      [announcement]: All players get 2[shiftiness].
+- name: Catch your own parrot
+  type: publicObjective
+  cost: 0
+  resource: 1
+  ability:
+    custom: |
+      Draw a card to replace this.[br]
+      [announcement]: This is a public objective that requires 4 [carousing] + [shiftiness].[br]
+      5 points

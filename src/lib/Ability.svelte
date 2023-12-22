@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { Card } from "../types";
   import Icon from "./Icon.svelte";
-  // import TaggedText from "./TaggedText.svelte";
+  import TaggedText from "./TaggedText.svelte";
 
   export let type: Card["type"];
   export let ability: Card["ability"];
@@ -49,7 +49,7 @@
     <Icon icon="coin" number={resource} />
   {/if}
   {#if custom}
-    <div class="custom">{custom}</div>
+    <div class="custom"><TaggedText text={custom} /></div>
   {/if}
   {#if perCrew}<div class="modifier">x💃</div>{/if}
 </div>
@@ -67,6 +67,6 @@
   }
   .custom {
     padding: 10px;
-    font-size: 20px;
+    font-size: 24px;
   }
 </style>
