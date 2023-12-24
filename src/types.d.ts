@@ -1,3 +1,5 @@
+type AbilityValue = number | number[];
+
 export type Card = {
   name: string;
   type:
@@ -7,18 +9,20 @@ export type Card = {
     | "announcement"
     | "training"
     | "upgrade"
-    | "objective";
+    | "publicObjective"
+    | "privateObjective"
+    | "publicEvent";
   cost: number;
   resource: number;
   dispose?: boolean;
   ability: {
-    cannon?: number;
-    swashbuckling?: number;
-    explosive?: number;
-    carousing?: number;
-    shiftiness?: number;
-    move?: number;
-    resource?: number;
+    cannon?: AbilityValue;
+    swashbuckling?: AbilityValue;
+    explosive?: AbilityValue;
+    carousing?: AbilityValue;
+    shiftiness?: AbilityValue;
+    move?: AbilityValue;
+    resource?: AbilityValue;
     perCrew?: boolean;
     custom?: string;
   };

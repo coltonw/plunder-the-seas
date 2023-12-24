@@ -40,7 +40,7 @@
   .move {
     background-image: url("../assets/compass.png");
   }
-  .coin {
+  .resource {
     background-image: url("../assets/doubloon.png");
   }
   .announcement {

@@ -72,11 +72,15 @@
     background-position: top;
   }
   .crew .main-image {
-    background-image: url("../assets/pirate_captain.png");
+    background-image: url("../assets/crew.png");
     background-position: top;
   }
-  .objective .main-image {
+  .privateObjective .main-image,
+  .publicObjective .main-image {
     background-image: url("../assets/treasure_map.png");
+  }
+  .publicEvent .main-image {
+    background-image: url("../assets/looking_at_horizon.png");
   }
 
   .name-container,
